@@ -1427,7 +1427,7 @@ Valitse suojaustaso valikon alaosan kohdasta Evästeet.</p>
 
           $('.harjoittelija-positions').append('<hr/>')
       });
-        $('.harjoittelija-positions').append('<span class="show">Näytä lisää työpaikkoja <i class="fas fa-chevron-right"></i></span>')
+        $('.harjoittelija-positions').append('<span class="show"><a href="https://duunitori.fi/tyopaikat/?haku=harjoittelija&alue=">Näytä lisää työpaikkoja</a> <i class="fas fa-chevron-right"></i></span>')
     });
     $.getJSON('https://duunitori.fi/api/v1/jobentries?search=putkimies&format=json', function(data) {
       results = data.results
