@@ -280,3 +280,6 @@ word-wrap: break-word;
   display: inline-block;
 
 }
+a{
+  color: black;
+}

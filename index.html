@@ -1423,7 +1423,7 @@ Valitse suojaustaso valikon alaosan kohdasta Evästeet.</p>
         $('.harjoittelija-positions').append('<span class="circle">' + value.company_name + '</span>')
 
 
-        $('.harjoittelija-positions').append('<span class="container"><span class="heading">' + value.heading + '</span><span class="city">' + city  + '</span><span class="divider">-</span><span class="date">Julkaistu '  + date + '</span></span>')
+        $('.harjoittelija-positions').append('<span class="container"><span class="heading"><a href="https://duunitori.fi/tyopaikat/tyo/' + value.slug + '">'  + value.heading + '</a></span><span class="city">' + city  + '</span><span class="divider">-</span><span class="date">Julkaistu '  + date + '</span></span>')
 
           $('.harjoittelija-positions').append('<hr/>')
       });
@@ -1432,7 +1432,7 @@ Valitse suojaustaso valikon alaosan kohdasta Evästeet.</p>
     $.getJSON('https://duunitori.fi/api/v1/jobentries?search=putkimies&format=json', function(data) {
       results = data.results
       results.forEach(function(value) {
-        $('.putkimies-positions').append('<p>' + value.heading + '</p>')
+        $('.putkimies-positions').append('<p><a href="https://duunitori.fi/tyopaikat/tyo/' + value.slug + '">'  + value.heading + '</a></p>')
       });
     });
 
