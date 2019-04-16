@@ -275,3 +275,7 @@ word-wrap: break-word;
   font-size: 1.35rem;
   color: #9e9ea0;
 }
+.city-container{
+  display: inline-block;
+
+}

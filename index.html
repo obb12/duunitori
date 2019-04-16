@@ -1422,11 +1422,8 @@ Valitse suojaustaso valikon alaosan kohdasta Evästeet.</p>
         $('.harjoittelija-positions').append('')
         $('.harjoittelija-positions').append('<span class="circle">' + value.company_name + '</span>')
 
-        $('.harjoittelija-positions').append('<span class="heading">' + value.heading + '</span>')
 
-        $('.harjoittelija-positions').append('<span class="city">' + city  + '</span>')
-        $('.harjoittelija-positions').append('<span class="divider">-</span>')
-        $('.harjoittelija-positions').append('<span class="date">Julkaistu '  + date + '</span>')
+        $('.harjoittelija-positions').append('<span class="container"><span class="heading">' + value.heading + '</span><span class="city">' + city  + '</span><span class="divider">-</span><span class="date">Julkaistu '  + date + '</span></span>')
 
           $('.harjoittelija-positions').append('<hr/>')
       });
