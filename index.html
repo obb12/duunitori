@@ -1414,7 +1414,7 @@ Valitse suojaustaso valikon alaosan kohdasta Evästeet.</p>
   $(function() {
     $.getJSON('https://duunitori.fi/api/v1/jobentries?search=harjoittelija&format=json', function(data) {
 
-      results = data.results
+      results = data.results.slice(0,2)
       results.forEach(function(value) {
         let city = value.municipality_name != null ? value.municipality_name : '?'
         let date = moment(value.date_posted).format('D.M');
